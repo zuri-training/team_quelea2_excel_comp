@@ -103,7 +103,8 @@ Project is currently ongoing.
 
 ## Authors
 
-- [Team Quelea2](https://github.com/orgs/zuri-training/teams/team-quelea2)
+- Click here to visit our awesome team.
+  [Team Quelea2](https://github.com/orgs/zuri-training/teams/team-quelea2)
 
 ### Acknowledgement
 
