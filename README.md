@@ -70,7 +70,7 @@ It has an authentication system. Which is secured and buit with the django web f
 - The backend developers provided the data schema for the project.
   (project is currently ongoing and the process will be updated regularly)
 
-### Technologies/Tools
+### Technology/tools adopted
 
 **Design**
  ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) ![Figjam](https://img.shields.io/badge/figjam-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
@@ -106,4 +106,4 @@ Project is currently ongoing.
 
 ### Acknowledgement
 
-We acknowledge the Zuri team and I4G for giving us the opportunity and priviledge of making our dream of becoming a developer come true. Thanks to all the mentors and tutors, they showed help during our times of need. and we assure you that your investment on us will forever remain in our hearts and yield excellent results. cheers.
+We acknowledge the Zuri team and I4G for giving us the opportunity and priviledge of making our dream of becoming a developer come true. Thanks to all the mentors and tutors, they showed help during our times of need. and we assure you that your investment on us will forever remain in our hearts and yield excellent results.
