@@ -5,7 +5,7 @@
   - [About](#about)
   - [Features](#features)
 - [Process](#process)
-  - [Technology/tools adopted](#technology/tools)
+  - [Technologies](#technologies)
   - [Status](#status)
   - [Resources](#resources)
 - [Authors](#Authors)
@@ -15,7 +15,8 @@
 
 ### Documentation
 
-[Google Docs Link](https://docs.google.com/document/d/1hBkZyckmH_9ZwOrZPwdUhQhKqWTdhPnEqRoj8LL7DqI/edit#)
+- Click here to see the documentation of the project.
+  [Google Docs Link](https://docs.google.com/document/d/1hBkZyckmH_9ZwOrZPwdUhQhKqWTdhPnEqRoj8LL7DqI/edit#)
 
 ### About
 
@@ -70,7 +71,7 @@ It has an authentication system. Which is secured and buit with the django web f
 - The backend developers provided the data schema for the project.
   (project is currently ongoing and the process will be updated regularly)
 
-### Technology/tools adopted
+### Technologies
 
 **Design**
  ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) ![Figjam](https://img.shields.io/badge/figjam-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
