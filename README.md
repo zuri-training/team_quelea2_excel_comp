@@ -108,4 +108,4 @@ Project is currently ongoing.
 
 ### Acknowledgement
 
-We acknowledge the Zuri team and I4G for giving us the opportunity and priviledge of making our dream of becoming a developer come true. Thanks to all the mentors and tutors, they showed help during our times of need. and we assure you that your investment on us will forever remain in our hearts and yield excellent results.
+We acknowledge the Zuri team and I4G for giving us the opportunity and priviledge of making our dream of becoming a developer come true. Thanks to all the mentors and tutors, they rendered help during our collective times of need, and we assure you that your investment on us will forever remain in our hearts and yield excellent results.
