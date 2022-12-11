@@ -1,7 +1,7 @@
 {% extends 'base.html' %} {% block content %}
 <div class="table-container">
   <div class="d-flex align-items-center justify-content-between mb-3">
-    <h4 class="m-0">Welcome {{request.user.username}}</h4>
+    <h3 class="m-0">Welcome {{request.user.username}}</h3>
     <div class="button-group d-flex">
       <a href="/download_csv" class="btn btn-primary d-flex align-items-center"
         ><i class="bi bi-download"></i>&nbsp;<span>Download CSV</span></a

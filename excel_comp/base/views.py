@@ -14,7 +14,13 @@ def home_page(request):
 def about_page(request):
     return render(request, 'pages/about.html')
 
-# @login_required(login_url="login_page")
+def documentation_page(request):
+    return render(request, 'pages/documentation.html')
+
+def contact_page(request):
+    return render(request, 'pages/contact.html')
+
+@login_required(login_url="login_page")
 def view_csv_page(request):
     context = {
         "csv": Student_csv.objects.all()
