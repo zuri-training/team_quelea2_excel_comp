@@ -6,6 +6,7 @@ urlpatterns = [
     path('about/', views.about_page, name="about_page"),
     path('documentation/', views.documentation_page, name="documentation_page"),
     path('contact/', views.contact_page, name="contact_page"),
+    path('compare_csv/', views.compare_csv_page, name="compare_csv_page"),
     path('view_csv/', views.view_csv_page, name="view_csv_page"),
     path('profile/', views.profile_page, name="profile_page"),
     path('update_profile/', views.update_profile_page, name="update_profile_page"),

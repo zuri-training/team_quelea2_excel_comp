@@ -90,6 +90,10 @@ def logout_page(request):
     return redirect('login_page')
 
 @login_required(login_url="login_page")
+def compare_csv_page(request):
+    return render(request, 'pages/compare_csv.html')
+
+@login_required(login_url="login_page")
 def upload_csv_page(request):
     if request.method == "POST":
         csv_file = request.FILES["file"]

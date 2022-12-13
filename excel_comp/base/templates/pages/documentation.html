@@ -1,4 +1,4 @@
-{% extends 'base.html' %} {% block content %}
+{% extends 'base.html' %} {% block content %}{% load static %}
 <div class="row">
   <div class="col-3">
     <ul class="side-bar list-group">
@@ -110,10 +110,7 @@
         <li>Access to a Quelea2 Excel Compare account.</li>
         <li>At least two documents of excel or csv format to compare.</li>
       </ul>
-      <div>
-        <!-- <img src="../IMG/Frame 212.png" alt="" class="" />
-        <img src="../IMG/Frame 208.png" alt="" class="" /> -->
-      </div>
+      <img src="{% static 'images/frame1.png' %}" />
     </section>
     <hr />
     <section class="creating-comparison my-5" id="creating-comparison">
@@ -126,10 +123,7 @@
         Drag and drop your files into the fields provided and wait for the
         magic.
       </p>
-      <div>
-        <!-- <img src="../IMG/Frame 212.png" alt="" class="img21" />
-        <img src="../IMG/Frame 209.png" alt="" class="img22" /> -->
-      </div>
+      <img src="{% static 'images/frame1.png' %}" />
     </section>
     <hr />
     <section class="interpreting-response my-5" id="interpreting-response">

@@ -1,4 +1,4 @@
-{% extends 'base.html' %} {% block content %}
+{% extends 'base.html' %} {% block content %} {% load static %}
 <div
   style="
     background-image: -webkit-linear-gradient(
@@ -18,89 +18,118 @@
 <section class="text-center">
   <div class="my-5">
     <h1>File comparison made easy</h1>
-    <p class="py-5">
+    <p class="py-3">
       Exel comp makes the pesky task of file manipulation and storage easy
-      <br />even for the oldest of senior citizens.
+      <br />even for the oldest of senior citizens. <br />
+      <a href="#" class="btn2">Get Started</a>
     </p>
-    <a href="#" class="btn2">Get Started</a>
   </div>
   <div class="box2">
-    <img src="/IMG/screen.png" class="img" />
+    <img src="{% static 'images/screen.png' %}" class="screen-img" />
     <h6 class="h-2">
       Behind every successful product <br />is compotent backers
     </h6>
-    <img class="icons" src="/IMG/Sponsors.png" alt="sponsors" />
+    <img
+      class="icons"
+      src="{% static 'images/sponsors.png' %}"
+      alt="sponsors"
+      width="100%"
+    />
   </div>
 </section>
 
 <!-- about section -->
-<section class="text-center">
+<section class="text-center my-5">
   <div class="main">
-    <h1>
+    <h1 class="mb-5">
       Compare,Merge<br />
-      and store-all in <span>One Place</span>
+      and store-all in <span class="h6">One Place</span>
     </h1>
   </div>
-  <div class="content-item">
-    <img src="/IMG/Group 1.png" alt="easy to drag" />
+  <div class="row">
+    <div class="col-sm-6">
+      <img
+        src="{% static 'images/group.png' %}"
+        alt="easy to drag"
+        style="width: 100%"
+      />
+    </div>
+    <div class="col-sm-6 my-auto">
+      <h1>Why Us?</h1>
+      <p>
+        Excel Compare works with a steady backbone to make sure your files are
+        compared with state of the art algorithms and encrypted during stag fir
+        added security
+      </p>
+    </div>
   </div>
 </section>
 
 <!-- features section -->
-<section class="text-center">
+<section class="text-center my-5">
   <div class="title1">
-    <h1>Features</h1>
+    <h1 class="mb-5">Features</h1>
   </div>
-  <div class="row">
-    <div class="col">
-      <div class="circle"><img src="/IMG/flash.svg" alt="Flash" /></div>
-      <h3>Quick Setup</h3>
-      <p>
-        Email and password setup is of need to get started working with our
-        product.
-      </p>
-    </div>
-    <div class="col">
-      <div class="circle2">
-        <img src="/IMG/lock.svg" alt="Lock" />
+  <div class="row g-3">
+    <div class="col-lg-4">
+      <div class="p-4 rounded border shadow">
+        <div class="circle">
+          <img src="{% static 'images/flash.svg' %}" alt="Flash" />
+        </div>
+        <h3>Quick Setup</h3>
+        <p>
+          Email and password setup is of need to get started working with our
+          product.
+        </p>
       </div>
-      <h3>File Security</h3>
-      <p>
-        File in the database are encrypted using the SHA-256 algorithm for added
-        security.
-      </p>
     </div>
-    <div class="col">
-      <div class="circle2"><img src="/IMG/lamp.svg" alt="Lamp" /></div>
-      <h3>File Storage</h3>
-      <p>Fast and responsive database when queried for access of content.</p>
+    <div class="col-lg-4">
+      <div class="p-4 rounded border shadow">
+        <div class="circle2">
+          <img src="{% static 'images/lock.svg' %}" alt="Lock" />
+        </div>
+        <h3>File Security</h3>
+        <p>
+          File in the database are encrypted using the SHA-256 algorithm for
+          added security.
+        </p>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="p-4 rounded border shadow">
+        <div class="circle2">
+          <img src="{% static 'images/lamp.svg' %}" alt="Lamp" />
+        </div>
+        <h3>File Storage</h3>
+        <p>Fast and responsive database when queried for access of content.</p>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- Testimonials section -->
-<section class="testimonials">
-  <h1 class="text-center">Testimonials</h1>
+<section class="my-5">
+  <h1 class="text-center mb-5">Testimonials</h1>
   <div class="row">
-    <div class="col">
-      <img src="/IMG/Rectangle 61.png" alt="Man working" />
+    <div class="col-sm-6">
+      <img
+        src="{% static 'images/rectangle.png' %}"
+        alt="Man working"
+        style="width: 100%"
+      />
     </div>
-    <div class="col">
+    <div class="col-sm-6 my-auto">
       <h2>AlvinMakena</h2>
       <p><strong>IBM</strong></p>
       <p>
         Invaluable for secretaries and trasures looking to keep their books in
         line with the company guidelines.i can't recommend it more
       </p>
-      <div class="slide left">
-        <img src="/IMG/arrow-right.svg" alt="left" />
-        <img src="/IMG/arrow-right-1.svg" alt="right" />
-      </div>
     </div>
   </div>
 </section>
 
-<section>
+<section class="my-5">
   <h1 class="text-center">FAQ</h1>
   <div class="accordion accordion-flush" id="accordionFlushExample">
     <div class="accordion-item">
@@ -247,12 +276,12 @@
 </section>
 
 <!-- help section -->
-<section>
+<section class="my-5">
   <div class="row">
-    <div class="col">
-      <img src="/IMG/mail.png" />
+    <div class="col-sm-6">
+      <img src="{% static 'images/mail.png' %}" style="width: 100%" />
     </div>
-    <div class="col">
+    <div class="col-sm-6 my-auto">
       <h1>Help is on the way</h1>
       <p>Have additional questions for us? Get in touch</p>
       <button id="get-help">Get Help &#10230;</button>
@@ -261,9 +290,9 @@
 </section>
 
 <!-- get started section -->
-<section class="get-started">
+<section class="my-5">
   <div class="row">
-    <div class="col">
+    <div class="col-sm-6 my-auto">
       <h1>Get Started With Exel Compare</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
@@ -271,8 +300,8 @@
       </p>
       <a href="#" class="btn2">Get Started</a>
     </div>
-    <div class="col">
-      <img src="/IMG/Worker.png" />
+    <div class="col-sm-6">
+      <img src="{% static 'images/worker.png' %}" style="width: 100%" />
     </div>
   </div>
 </section>
