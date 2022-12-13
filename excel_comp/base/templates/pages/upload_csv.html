@@ -6,11 +6,18 @@
     display: block;
   }
 </style>
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
 <h3>Upload CSV</h3>
 <form method="POST" enctype="multipart/form-data">
   {% csrf_token %} {{form.as_p}}
   <label for="file">Choose File:</label>
-  <input type="file" name="file" id="file" />
+  <input type="file" name="file" id="file" required />
   <button>Upload</button>
 </form>
 {% endblock %}

@@ -31,9 +31,25 @@ def view_csv_page(request):
 def profile_page(request):
     return render(request, 'pages/profile.html')
 
+@login_required(login_url="login_page")
+def update_profile_page(request):
+    if request.method=="POST":
+        form = UserUpdateForm(request.POST, request.FILES, instance = request.user)
+        if form.is_valid():
+            user = form.save()
+            # messages.success(request, f'accouunt updated for {user.username} succefully')
+            print(f'accouunt updated for {user.username} succefully')
+            return redirect('profile_page')
+    else:
+        form = UserUpdateForm(instance = request.user)
+    context = {
+        'form': form
+    }
+    return render(request, 'pages/profile_update.html', context)
+
 def register_page(request):
     if request.user.is_authenticated:
-        return redirect('dashboard_page')
+        return redirect('view_csv_page')
     if request.method=="POST":
         form = UserRegisterForm(request.POST)
         if form.is_valid():
@@ -50,7 +66,7 @@ def register_page(request):
 
 def login_page(request):
     if request.user.is_authenticated:
-        return redirect('dashboard_page')
+        return redirect('view_csv_page')
     if request.method == "POST":
         form = AuthenticationForm(data=request.POST)
         if form.is_valid():
@@ -77,19 +93,25 @@ def logout_page(request):
 def upload_csv_page(request):
     if request.method == "POST":
         csv_file = request.FILES["file"]
-        if not csv_file.name.endswith('.csv') or not csv_file.name.endswith('.xlsx'): 
+        # if not csv_file.name.endswith('.csv') or not csv_file.name.endswith('.xlsx'): 
+        #     messages.error(request, 'Invalid file format.')
+        if csv_file.name.endswith('.csv') or csv_file.name.endswith('.xlsx'):
+            data_set = csv_file.read().decode('UTF-8')
+            io_strig = io.StringIO(data_set)
+            next(io_strig)
+            for column in csv.reader(io_strig, delimiter=',', quotechar="|"):
+                _, created = Student_csv.objects.update_or_create(
+                    first_name=column[0],
+                    last_name=column[1],
+                    email=column[2],
+                    phone_number = column[3],
+                    track = column[4]
+                )
+            File.objects.create(file=csv_file)
+            messages.success(request, 'File uploaded successfully.')
+            return redirect('view_csv_page')
+        else:
             messages.error(request, 'Invalid file format.')
-        data_set = csv_file.read().decode('UTF-8')
-        io_strig = io.StringIO(data_set)
-        next(io_strig)
-        for column in csv.reader(io_strig, delimiter=',', quotechar="|"):
-            _, created = Student_csv.objects.update_or_create(
-                first_name=column[0],
-                last_name=column[1],
-                email=column[2],
-                phone_number = column[3],
-                track = column[4]
-            )
     return render(request, 'pages/upload_csv.html')
 
 

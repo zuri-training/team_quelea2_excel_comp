@@ -4,7 +4,11 @@
   <div class="container pt-0">
     <!-- navbar brand / title -->
     <a class="navbar-brand" href="{% url 'home_page' %}">
-      <img src="{% static 'images/logo.png' %}" alt="Quelea2" />
+      <img
+        src="{% static 'images/logo.png' %}"
+        alt="Quelea2"
+        style="width: 100px"
+      />
     </a>
 
     <!-- toggle button for mobile nav -->
@@ -54,6 +58,15 @@
             >Contact</a
           >
         </li>
+        {% if request.user.is_authenticated %}
+        <li class="nav-item">
+          <a
+            class="nav-link text-light ms-lg-3 ms-0"
+            href="{% url 'view_csv_page' %}"
+            >CSV</a
+          >
+        </li>
+        {% endif %}
         <li class="nav-item d-lg-none d-flex">
           {% if request.user.is_authenticated %}
           <a

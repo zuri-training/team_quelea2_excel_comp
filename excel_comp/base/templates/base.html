@@ -37,9 +37,8 @@
   </style>
   <body>
     <span>{% include 'components/navbar.html' %} </span>
-    <div class="container pt-0 d-flex">
-      <span>{% include 'components/sidebar.html' %}</span>
-      <span class="main-bar">{% block content %} {% endblock %}</span>
+    <div class="container" style="padding-top: 100px; padding-bottom: 20px">
+      {% block content %} {% endblock %}
     </div>
     <span>{% include 'components/footer.html' %}</span>
   </body>

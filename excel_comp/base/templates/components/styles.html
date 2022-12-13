@@ -1,4 +1,7 @@
 <style>
+  body {
+    font-family: "Poppins", sans-serif;
+  }
   nav {
     background-color: black;
     color: white;
@@ -29,26 +32,63 @@
     list-style-type: none;
     padding: 0px;
   }
-  .side-bar {
-    flex: 1;
-    padding-top: 80px;
-  }
-  .main-bar {
-    flex: 2;
-    padding-top: 80px;
-    padding-left: 20px;
-    padding-bottom: 20px;
-  }
   .main-footer {
     display: flex;
     justify-content: space-between;
+  }
+  form {
+    width: 500px;
+    margin: auto;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  form input {
+    display: block;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    outline: none;
+    border-radius: 3px;
+    padding: 5px;
+  }
+  form textarea {
+    display: block;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    outline: none;
+    border-radius: 3px;
+    padding: 5px;
+    height: 100px;
+  }
+  form button {
+    display: block;
+    width: 100%;
+    border-radius: 3px;
+    padding: 10px;
+    outline: none;
+    color: white;
+    background-color: #2c8579;
+    border: 1px solid #2c8578;
+  }
+  .errorlist {
+    list-style-type: none;
+    color: #ff3c3c;
+    font-size: 14px;
+    padding: 0px;
+  }
+  .side-bar {
+    position: fixed;
+  }
+  .side-bar a {
+    text-decoration: none;
+    color: rgb(37, 111, 101);
   }
   @media screen and (max-width: 960px) {
     .main-footer {
       display: block;
     }
-    .side-bar {
-      display: none;
+    form {
+      width: 100%;
     }
   }
 </style>

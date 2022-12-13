@@ -1,3 +1,280 @@
 {% extends 'base.html' %} {% block content %}
-<h3>Home page</h3>
+<div
+  style="
+    background-image: -webkit-linear-gradient(
+      -75deg,
+      rgb(185, 214, 210) 60%,
+      #fff 20%
+    );
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 900px;
+    width: 100%;
+    z-index: -10;
+  "
+></div>
+<!-- intro section -->
+<section class="text-center">
+  <div class="my-5">
+    <h1>File comparison made easy</h1>
+    <p class="py-5">
+      Exel comp makes the pesky task of file manipulation and storage easy
+      <br />even for the oldest of senior citizens.
+    </p>
+    <a href="#" class="btn2">Get Started</a>
+  </div>
+  <div class="box2">
+    <img src="/IMG/screen.png" class="img" />
+    <h6 class="h-2">
+      Behind every successful product <br />is compotent backers
+    </h6>
+    <img class="icons" src="/IMG/Sponsors.png" alt="sponsors" />
+  </div>
+</section>
+
+<!-- about section -->
+<section class="text-center">
+  <div class="main">
+    <h1>
+      Compare,Merge<br />
+      and store-all in <span>One Place</span>
+    </h1>
+  </div>
+  <div class="content-item">
+    <img src="/IMG/Group 1.png" alt="easy to drag" />
+  </div>
+</section>
+
+<!-- features section -->
+<section class="text-center">
+  <div class="title1">
+    <h1>Features</h1>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="circle"><img src="/IMG/flash.svg" alt="Flash" /></div>
+      <h3>Quick Setup</h3>
+      <p>
+        Email and password setup is of need to get started working with our
+        product.
+      </p>
+    </div>
+    <div class="col">
+      <div class="circle2">
+        <img src="/IMG/lock.svg" alt="Lock" />
+      </div>
+      <h3>File Security</h3>
+      <p>
+        File in the database are encrypted using the SHA-256 algorithm for added
+        security.
+      </p>
+    </div>
+    <div class="col">
+      <div class="circle2"><img src="/IMG/lamp.svg" alt="Lamp" /></div>
+      <h3>File Storage</h3>
+      <p>Fast and responsive database when queried for access of content.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials section -->
+<section class="testimonials">
+  <h1 class="text-center">Testimonials</h1>
+  <div class="row">
+    <div class="col">
+      <img src="/IMG/Rectangle 61.png" alt="Man working" />
+    </div>
+    <div class="col">
+      <h2>AlvinMakena</h2>
+      <p><strong>IBM</strong></p>
+      <p>
+        Invaluable for secretaries and trasures looking to keep their books in
+        line with the company guidelines.i can't recommend it more
+      </p>
+      <div class="slide left">
+        <img src="/IMG/arrow-right.svg" alt="left" />
+        <img src="/IMG/arrow-right-1.svg" alt="right" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h1 class="text-center">FAQ</h1>
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <button
+          class="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#flush-collapseOne"
+          aria-expanded="false"
+          aria-controls="flush-collapseOne"
+        >
+          Can i use exel compare without an account?
+        </button>
+      </h2>
+      <div
+        id="flush-collapseOne"
+        class="accordion-collapse collapse"
+        aria-labelledby="flush-headingOne"
+        data-bs-parent="#accordionFlushExample"
+      >
+        <div class="accordion-body">
+          Placeholder content for this accordion, which is intended to
+          demonstrate the <code>.accordion-flush</code> class. This is the first
+          item's accordion body.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingTwo">
+        <button
+          class="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#flush-collapseTwo"
+          aria-expanded="false"
+          aria-controls="flush-collapseTwo"
+        >
+          Can i sign up using my Google or Apple account?
+        </button>
+      </h2>
+      <div
+        id="flush-collapseTwo"
+        class="accordion-collapse collapse"
+        aria-labelledby="flush-headingTwo"
+        data-bs-parent="#accordionFlushExample"
+      >
+        <div class="accordion-body">
+          Placeholder content for this accordion, which is intended to
+          demonstrate the <code>.accordion-flush</code> class. This is the
+          second item's accordion body. Let's imagine this being filled with
+          some actual content.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingThree">
+        <button
+          class="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#flush-collapseThree"
+          aria-expanded="false"
+          aria-controls="flush-collapseThree"
+        >
+          Can i download the merged file?
+        </button>
+      </h2>
+      <div
+        id="flush-collapseThree"
+        class="accordion-collapse collapse"
+        aria-labelledby="flush-headingThree"
+        data-bs-parent="#accordionFlushExample"
+      >
+        <div class="accordion-body">
+          Placeholder content for this accordion, which is intended to
+          demonstrate the <code>.accordion-flush</code> class. This is the third
+          item's accordion body. Nothing more exciting happening here in terms
+          of content, but just filling up the space to make it look, at least at
+          first glance, a bit more representative of how this would look in a
+          real-world application.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingFour">
+        <button
+          class="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#flush-collapseFour"
+          aria-expanded="false"
+          aria-controls="flush-collapseFour"
+        >
+          I forgot my password, What next?
+        </button>
+      </h2>
+      <div
+        id="flush-collapseFour"
+        class="accordion-collapse collapse"
+        aria-labelledby="flush-headingFour"
+        data-bs-parent="#accordionFlushExample"
+      >
+        <div class="accordion-body">
+          Placeholder content for this accordion, which is intended to
+          demonstrate the <code>.accordion-flush</code> class. This is the third
+          item's accordion body. Nothing more exciting happening here in terms
+          of content, but just filling up the space to make it look, at least at
+          first glance, a bit more representative of how this would look in a
+          real-world application.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingFive">
+        <button
+          class="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#flush-collapseFive"
+          aria-expanded="false"
+          aria-controls="flush-collapseFive"
+        >
+          Question Number Five?
+        </button>
+      </h2>
+      <div
+        id="flush-collapseFive"
+        class="accordion-collapse collapse"
+        aria-labelledby="flush-headingFive"
+        data-bs-parent="#accordionFlushExample"
+      >
+        <div class="accordion-body">
+          Placeholder content for this accordion, which is intended to
+          demonstrate the <code>.accordion-flush</code> class. This is the third
+          item's accordion body. Nothing more exciting happening here in terms
+          of content, but just filling up the space to make it look, at least at
+          first glance, a bit more representative of how this would look in a
+          real-world application.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- help section -->
+<section>
+  <div class="row">
+    <div class="col">
+      <img src="/IMG/mail.png" />
+    </div>
+    <div class="col">
+      <h1>Help is on the way</h1>
+      <p>Have additional questions for us? Get in touch</p>
+      <button id="get-help">Get Help &#10230;</button>
+    </div>
+  </div>
+</section>
+
+<!-- get started section -->
+<section class="get-started">
+  <div class="row">
+    <div class="col">
+      <h1>Get Started With Exel Compare</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+        incidunt dolores corporis.
+      </p>
+      <a href="#" class="btn2">Get Started</a>
+    </div>
+    <div class="col">
+      <img src="/IMG/Worker.png" />
+    </div>
+  </div>
+</section>
+
 {% endblock %}

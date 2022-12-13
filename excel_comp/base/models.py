@@ -7,8 +7,8 @@ class User(AbstractUser):
     last_name = models.CharField(max_length = 100)
     username = models.CharField(max_length = 100, blank=True)
     email = models.EmailField(unique = True)
-    # Bio=models.TextField()
-    # image=models.ImageField()
+    bio=models.TextField(null=True)
+    image=models.ImageField(null= True, default = 'default.jpg', upload_to='profile_pics')
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['username']
 
@@ -29,5 +29,11 @@ class Student_csv(models.Model):
     
     def __str__(self):
         return self.first_name
+
+class File(models.Model):
+    file = models.FileField(upload_to="files")
+
+    def __str__(self):
+        return self.file.name
     
 
