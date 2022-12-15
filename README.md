@@ -1,6 +1,7 @@
 ## Table of Contents
 
 - [Overview](#overview)
+  - [Live Website](#website)
   - [Documentation](#documentation)
   - [About](#about)
   - [Features](#features)
@@ -12,6 +13,11 @@
 - [Acknowledgement](#Acknowledgement)
 
 ## Overview
+
+### Live Website
+
+- Click here to visit the live website.
+  [Live Website](https://excelcomp.up.railway.app/)
 
 ### Documentation
 
