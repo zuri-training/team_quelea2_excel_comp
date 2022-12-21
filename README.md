@@ -17,7 +17,7 @@
 ### Website
 
 - Click here to visit the live website.
-  [Live Website](https://excelcomp.up.railway.app/)
+  [Live Website](https://excelcomp.up.railway.app/) or https://excelcomp.up.railway.app/
 
 ### Documentation
 
